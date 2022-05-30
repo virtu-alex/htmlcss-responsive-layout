@@ -29,7 +29,7 @@ header {
 
 /* GENERICS */
 
-.plans {
+.bck-purple {
     background-color: #9792E4;
 }
 
@@ -38,7 +38,8 @@ header {
 }
 
 .container {
-    max-width: 375px;
+    width: 375px;
+    width: 100%;
     margin: 0 auto;
     border: 4px inset black;
 }
@@ -47,37 +48,273 @@ header {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 /* JUMBOTRON */
 
-.small-col,
-.big-col {
+.small-jumbo-col,
+.big-jumbo-col {
     width: 100%;
     padding: 30px 30px;
 }
 
-.small-card,
-.big-card {
+.small-jumbo-card,
+.big-jumbo-card {
     background-color: steelblue;
     border-radius: 30px;
 }
 
-.small-card {
+.small-jumbo-card {
     min-height: 250px;
     border: 4px inset black;
-
 }
 
-.big-card {
+.big-jumbo-card {
     min-height: 500px;
     border: 4px inset black;
-
 }
 
 
+
+/* PLANS */
+
+.small-plans-col,
+.big-plans-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.small-plans-card,
+.big-plans-card {
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.small-plans-card {
+    min-height: 250px;
+    border: 4px inset black;
+}
+
+.big-plans-card {
+    min-height: 500px;
+    border: 4px inset black;
+}
+
+/* TESTIMONIALS */
+
+
+
+.small-test-col,
+.big-test-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.small-test-card,
+.big-test-card {
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.small-test-card {
+    min-height: 250px;
+    border: 4px inset black;
+}
+
+.big-test-card {
+    min-height: 500px;
+    border: 4px inset black;
+}
+
+.title-test-card {
+    border: 4px inset white;
+    min-height: 100px;
+}
+
+/* BENEFITS */
+
+
+
+.small-fits-col,
+.big-fits-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.small-fits-card,
+.big-fits-card {
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.small-fits-card {
+    min-height: 250px;
+    border: 4px inset black;
+}
+
+.big-fits-card {
+    min-height: 500px;
+    border: 4px inset black;
+}
+
+.title-fits-card {
+    border: 4px inset white;
+    min-height: 100px;
+}
+
+/* ABOUT US */
+
+.small-about-col,
+.big-about-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+
+
+.small-about-card,
+.big-about-card {
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.small-about-card {
+    min-height: 250px;
+    border: 4px inset black;
+}
+
+.big-about-card {
+    min-height: 500px;
+    border: 4px inset black;
+}
+
+.title-about-card {
+    border: 4px inset white;
+    min-height: 100px;
+}
+
+/* GET STARTED */
+
+.small-start-col,
+.big-start-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.small-start-card,
+.big-start-card {
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.small-start-card {
+    min-height: 250px;
+    border: 4px inset black;
+}
+
+.big-start-card {
+    min-height: 500px;
+    border: 4px inset black;
+}
+
+.title-start-card {
+    border: 4px inset white;
+    min-height: 100px;
+}
+
+/* FOOTER */
 
 .title-card {
     border: 4px inset white;
     min-height: 100px;
+}
+
+.footer-col {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.nav-long {
+    display: none;
+}
+
+
+/* QUERY 810 PX */
+
+
+@media screen and (min-width: 810px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* JUMBO QUERY */
+
+    .big-jumbo-col {
+        width: 65%;
+    }
+
+    .small-jumbo-col {
+        width: 30%;
+    }
+
+    .small-jumbo-card {
+        height: 100%;
+    }
+
+    /* PLANS QUERY */
+
+    .small-plans-col:first-child {
+        min-height: 500px;
+    }
+
+    .small-plans-card {
+        height: 100%;
+    }
+
+    /* TESTIMONIAL QUERY NO CHANGE */
+
+
+
+    /* BENEFITS QUERY */
+
+    .small-fits-col {
+        width: 50%;
+    }
+
+    /* ABOUT US */
+
+    .row {
+        flex-direction: row;
+    }
+
+    .big-about-col {
+        width: 65%;
+    }
+
+    .small-about-col {
+        width: 35%;
+    }
+
+    /* FOOTER QUERY NO CHANGE */
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /* NAV SWAP HEADER */
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-long {
+        display: block;
+    }
 }
