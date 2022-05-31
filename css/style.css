@@ -6,8 +6,12 @@
 
 body {
     padding-top: 100px;
+    font-family: 'PT Sans', sans-serif;
 }
 
+section {
+    margin-top: 50px;
+}
 
 /* HEADER */
 
@@ -24,12 +28,69 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 10px grey;
-    padding: 0 50px;
+    padding: 0 30px;
+}
+
+.logo {
+    display: block;
 }
 
 
+a {
+    text-decoration: none;
+}
+
 /* ULTIS */
 
+.underline {
+    text-decoration: underline;
+}
+
+.b-radius50 {
+    border-radius: 50%;
+}
+
+.btn-purple {
+    background-color: #9792E4;
+    padding: .5rem 3rem;
+    border-radius: 20px;
+}
+
+.img-size {
+    height: 150px;
+    width: 150px;
+}
+
+.btn-white {
+    background-color: white;
+    padding: .7rem;
+    border-radius: 20px;
+}
+
+.btn-white-large {
+    background-color: white;
+    padding: .7rem 5rem;
+    border-radius: 20px;
+}
+
+.btn-blue {
+    background-color: #0084FD;
+    color: white;
+    padding: .7rem 3rem;
+    border-radius: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding-right: 20px;
+}
 
 .bck-blue {
     background-color: #0184FE;
@@ -51,6 +112,69 @@ header {
     background-color: white;
 }
 
+.txt-center {
+    text-align: center;
+}
+
+.color-azure {
+    color: #0084FD;
+}
+
+.color-purple {
+    color: #9792E4;
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+.font-size-3 {
+    font-size: 2.5rem;
+}
+
+.font-size-4 {
+    font-size: 3.5rem;
+}
+
+.pad-all {
+    padding: 1rem;
+}
+
+.pad-top20 {
+    padding-top: 20px;
+}
+
+.pad-top50 {
+    padding-top: 50px;
+}
+
+.pad-bot20 {
+    padding-bottom: 20px;
+}
+
+.l-height25 {
+    line-height: 25px;
+}
+
+.l-height40 {
+    line-height: 40px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-light-purple {
+    color: #D5D4F4;
+}
+
+.color-yellow {
+    color: #FDC15F;
+}
 
 
 /* GENERICS */
@@ -70,11 +194,16 @@ header {
     flex-wrap: wrap;
 }
 
+.fa-apple {
+    padding-right: 5px;
+}
+
+ul li:last-child{
+    padding-right: 0;
+}
 
 
 /* JUMBOTRON */
-
-
 
 .small-jumbo-col,
 .big-jumbo-col {
@@ -82,26 +211,36 @@ header {
     padding: 30px 30px;
 }
 
-.small-jumbo-card,
 .big-jumbo-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border-radius: 30px;
+}
+
+.big-jumbo-card img {
+    display: block;
+}
+
+.small-jumbo-card {
+    padding: 1rem;
     border-radius: 30px;
 }
 
 .small-jumbo-card {
-    min-height: 250px;
     border: 4px inset black;
 }
 
 .big-jumbo-card {
-    min-height: 500px;
     border: 4px inset black;
 }
 
-
-
 /* PLANS */
 
-
+.fa-file-code {
+    font-size: 50px;
+    color: #0084FD;
+}
 
 .small-plans-col,
 .big-plans-col {
@@ -111,12 +250,14 @@ header {
 
 .small-plans-card,
 .big-plans-card {
-
     border-radius: 30px;
 }
 
+.font-big {
+    font-size: 70px;
+}
+
 .small-plans-card {
-    min-height: 250px;
     border: 4px inset black;
 }
 
@@ -129,7 +270,10 @@ header {
 
 /* TESTIMONIALS */
 
-
+.small-test-card img {
+    height: 250px;
+    width: 250px;
+}
 
 .small-test-col,
 .big-test-col {
@@ -144,18 +288,15 @@ header {
 }
 
 .small-test-card {
-    min-height: 250px;
     border: 4px inset black;
 }
 
 .big-test-card {
-    min-height: 500px;
     border: 4px inset black;
 }
 
 .title-test-card {
     border: 4px inset white;
-    min-height: 100px;
 }
 
 
@@ -175,18 +316,15 @@ header {
 }
 
 .small-fits-card {
-    min-height: 250px;
     border: 4px inset black;
 }
 
 .big-fits-card {
-    min-height: 500px;
     border: 4px inset black;
 }
 
 .title-fits-card {
     border: 4px inset white;
-    min-height: 100px;
 }
 
 
@@ -201,7 +339,6 @@ header {
 
 .small-about-card,
 .big-about-card {
-
     border-radius: 30px;
 }
 
@@ -236,18 +373,15 @@ header {
 }
 
 .small-start-card {
-    min-height: 250px;
     border: 4px inset black;
 }
 
 .big-start-card {
-    min-height: 500px;
     border: 4px inset black;
 }
 
 .title-start-card {
     border: 4px inset white;
-    min-height: 100px;
 }
 
 
@@ -278,8 +412,8 @@ header {
     }
 
     .row {
-        flex-direction: row;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -288,11 +422,11 @@ header {
 
 
     .big-jumbo-col {
-        width: 65%;
+        width: calc(100% / 3 * 2)
     }
 
     .small-jumbo-col {
-        width: 30%;
+        width: calc(100% / 3)
     }
 
     .small-jumbo-card {
@@ -301,17 +435,16 @@ header {
 
     /* PLANS QUERY */
 
-    .small-plans-col:first-child {
-        min-height: 500px;
-    }
-
-    .small-plans-card {
-        height: 100%;
+    .small-plans-card h2 {
+        font-size: 5rem;
     }
 
 
-    /* TESTIMONIAL QUERY NO CHANGE */
+    /* TESTIMONIAL QUERY */
 
+    .small-test-card h4 h2 p{
+        font-size: 3rem;
+    }
 
 
 
