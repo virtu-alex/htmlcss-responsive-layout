@@ -56,6 +56,10 @@ a {
     border-radius: 20px;
 }
 
+.app-button {
+    text-align: center;
+}
+
 .img-size {
     height: 150px;
     width: 150px;
@@ -140,6 +144,10 @@ ul li {
     padding: 1rem;
 }
 
+.pad-left30 {
+    padding-left: 30px;
+}
+
 .pad-top20 {
     padding-top: 20px;
 }
@@ -184,7 +192,6 @@ ul li {
 .container {
     width: 375px;
     margin: 0 auto;
-    border: 4px inset black;
 }
 
 .row {
@@ -198,7 +205,7 @@ ul li {
     padding-right: 5px;
 }
 
-ul li:last-child{
+ul li:last-child {
     padding-right: 0;
 }
 
@@ -227,13 +234,6 @@ ul li:last-child{
     border-radius: 30px;
 }
 
-.small-jumbo-card {
-    border: 4px inset black;
-}
-
-.big-jumbo-card {
-    border: 4px inset black;
-}
 
 /* PLANS */
 
@@ -257,22 +257,13 @@ ul li:last-child{
     font-size: 70px;
 }
 
-.small-plans-card {
-    border: 4px inset black;
-}
-
-.big-plans-card {
-    min-height: 500px;
-    border: 4px inset black;
-}
-
-
 
 /* TESTIMONIALS */
 
+
 .small-test-card img {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
 }
 
 .small-test-col,
@@ -285,18 +276,6 @@ ul li:last-child{
 .big-test-card {
 
     border-radius: 30px;
-}
-
-.small-test-card {
-    border: 4px inset black;
-}
-
-.big-test-card {
-    border: 4px inset black;
-}
-
-.title-test-card {
-    border: 4px inset white;
 }
 
 
@@ -315,18 +294,6 @@ ul li:last-child{
     border-radius: 30px;
 }
 
-.small-fits-card {
-    border: 4px inset black;
-}
-
-.big-fits-card {
-    border: 4px inset black;
-}
-
-.title-fits-card {
-    border: 4px inset white;
-}
-
 
 /* ABOUT US */
 
@@ -342,21 +309,17 @@ ul li:last-child{
     border-radius: 30px;
 }
 
-.small-about-card {
-    min-height: 250px;
-    border: 4px inset black;
+.pos-rel{
+    position: relative;
 }
 
-.big-about-card {
-    min-height: 500px;
-    border: 4px inset black;
+.virgolette-volanti{
+    position: absolute;
+    font-size: 200px;
+    top: -20px;
+    right: 0;
+    color: #9792E4;
 }
-
-.title-about-card {
-    border: 4px inset white;
-    min-height: 100px;
-}
-
 
 /* GET STARTED */
 
@@ -372,26 +335,9 @@ ul li:last-child{
     border-radius: 30px;
 }
 
-.small-start-card {
-    border: 4px inset black;
-}
-
-.big-start-card {
-    border: 4px inset black;
-}
-
-.title-start-card {
-    border: 4px inset white;
-}
-
 
 /* FOOTER */
 
-
-.title-card {
-    border: 4px inset white;
-    min-height: 100px;
-}
 
 .footer-col {
     width: 100%;
@@ -422,15 +368,42 @@ ul li:last-child{
 
 
     .big-jumbo-col {
-        width: calc(100% / 3 * 2)
+        width: calc(100% / 3 * 2);
+
     }
 
     .small-jumbo-col {
-        width: calc(100% / 3)
+        width: calc(100% / 3);
     }
 
     .small-jumbo-card {
         height: 100%;
+    }
+
+    .big-jumbo-col p,
+    .small-jumbo-col p {
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+
+    .big-jumbo-col img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .jumbo-text h2 {
+        text-align: left;
+    }
+
+    .app-button {
+        text-align: left;
+    }
+
+    .fa-file-code,
+    .fa-compass-drafting,
+    .fa-laptop-code,
+    .fa-bullhorn {
+        font-size: 110px;
     }
 
     /* PLANS QUERY */
@@ -441,9 +414,19 @@ ul li:last-child{
 
 
     /* TESTIMONIAL QUERY */
+    .image-text {
+        padding-left: 30px;
+    }
 
-    .small-test-card h4 h2 p{
+    .small-test-card h4 h2 p {
         font-size: 3rem;
+    }
+
+    .small-test-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
 
 
@@ -472,6 +455,41 @@ ul li:last-child{
         width: 35%;
     }
 
+    .small-about-card h5 {
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    
+    /* GET STARTED QUERY */
+    
+
+    .small-start-card{
+        width: 50%;
+    }
+    .small-start-col h5 {
+        font-size: 3rem;
+    }
+    .small-start-col h6 {
+        font-size: 1rem;
+    }
+
+    .small-start-col h2 {
+        font-size: 6rem;
+    }
+
+    .small-start-col p {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .small-start-col .btn-white-large{
+        padding: 2rem 4rem;
+        border-radius: 70px;
+        font-size: 1.5rem;
+    }
+
+
 
     /* FOOTER QUERY NO CHANGE */
 
@@ -498,14 +516,29 @@ ul li:last-child{
     .container {
         max-width: 1200px;
     }
-
+    
     .small-plans-col,
     .big-plans-col {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% /3);
         padding: 30px 30px;
     }
 
     .small-fits-col {
         width: 30%;
+    }
+
+    .big-jumbo-card{
+        display: flex;
+        height: 100%;
+    }
+
+    .phone-image img{
+        height: 400px;
+        width: 350px;
+    }
+    .virgolette-volanti{
+        right: 40px;
     }
 }
